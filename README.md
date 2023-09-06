@@ -14,4 +14,9 @@ Os arquivos da documentação deste projeto estão na pasta [/docs](/docs), e o 
 
 # Releases
 
-Deverá ser publicado um release ao término de cada entrega do projeto.
+- Nome do Projeto (30/08/23). ✅
+- Nome do Grupo (30/08/23). ✅
+- Descrição do Projeto (30/08/23). ✅
+- Configuração do Git Pages (05/09/23). ✅
+- Colocando nomes (06/09/23). ✅
+- Análise de requisitos funcionais e não-funcionais (06/09/23). ✅
