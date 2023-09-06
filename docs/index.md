@@ -22,7 +22,7 @@
 # Autores
 
 * Caio Alexandre V.B. de Andrade
-* Aluno 2
+* Diego Oliveira Aluizio
 * Nicolas Fernandes Melnik
 
 # Descrição do projeto
