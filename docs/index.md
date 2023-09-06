@@ -38,7 +38,7 @@ A tarefa de computar a presença dos alunos em uma escola ainda é feita totalme
     <li>Gerar relatórios de faltas agrupados por data, ano do ensino, turma, professor, disciplina ou aluno.</li>
     <li>Avisar os pais/responsáveis por e-mail caso o comparecimento às aulas, dadas até o momento, estiverem abaixo de 80%.</li>
     <li>Se o aluno não comparecer em pelo menos 75% do total de aulas do ano será reprovado.</li>
-    <li>Cada professor deve ter um login e uma senha para entrar no sistema.</li>
+    <li>Cada professor deve ter um username e uma senha para entrar no sistema.</li>
 </ol>
 
 <h3>Requisitos não-funcionais</h3>
@@ -50,9 +50,9 @@ A tarefa de computar a presença dos alunos em uma escola ainda é feita totalme
     <li>O sistema deve ser acessível a todos (fonte ajustável, etc).</li>
     <li>O sistema deve ser acessado de qualquer navegador web, incluindo dispositivos móveis.</li>
     <li>O sistema deve ser responsivo na web e mobile.</li>
-    <li>Os relatórios gerados devem ser enviados para os responsáveis semanalmente.</li>
-    <li>O login de cada professor deve conter 8 dígitos.</li>
-    <li>A senha de cada professor deve conter no minímo 6 e no máximo 8 caracteres(obrigatoriamente 1 deve ser especial).</li>
+    <li>Os relatórios gerados devem ser enviados para os responsáveis semestralmente.</li>
+    <li>O username de cada professor deve conter 8 dígitos (cada professor tem uma identificação única).</li>
+    <li>A senha de cada professor deve conter no minímo 8 dígitos alfanuméricos (verificar se a senha é forte).</li>
 </ol>
 
 # Diagrama de casos de uso
