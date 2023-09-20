@@ -57,7 +57,9 @@ A tarefa de computar a presença dos alunos em uma escola ainda é feita totalme
 
 # Diagrama de casos de uso
 
-*&lt;Diagrama para visualizar o comportamento dos atores&gt;*
+<div align="center">
+<img src="https://github.com/profdscrodrigo/UML-Classroom-FCI/assets/117850844/02520806-ce0e-4b0c-99e1-02befcd184cf" width="700px" />
+</div>
 
 # Descrição dos casos de uso
 
