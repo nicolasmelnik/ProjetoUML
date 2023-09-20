@@ -20,3 +20,6 @@ Os arquivos da documentação deste projeto estão na pasta [/docs](/docs), e o 
 - Configuração do Git Pages (05/09/23). ✅
 - Colocando nomes (06/09/23). ✅
 - Análise de requisitos funcionais e não-funcionais (06/09/23). ✅
+- Diagrama de Caso de Usos (20/09/23). ✅
+
+
