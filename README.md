@@ -21,5 +21,5 @@ Os arquivos da documentação deste projeto estão na pasta [/docs](/docs), e o 
 - Colocando nomes (06/09/23). ✅
 - Análise de requisitos funcionais e não-funcionais (06/09/23). ✅
 - Diagrama de Caso de Usos (20/09/23). ✅
-
-
+- Atualização do Diagrama de Caso de Usos (24/09/23). ✅
+- Descrição dos Casos de Uso (24/09/23). ✅
