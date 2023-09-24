@@ -63,83 +63,145 @@ A tarefa de computar a presença dos alunos em uma escola ainda é feita totalme
 
 # Descrição dos casos de uso
 
-<div align="center">
-    
-| Caso de Uso: Efetuar Login           |
-|--------------------------------------|
-| Referência: US_01                    |
-| Descrição Geral: Esse caso de uso se trata do professor efetuar o login no sistema. |
-| Atores: Professor.                   |
-| Pré-condição: Professor deve receber suas credenciais da diretoria da escola. |
-| Pós-condição: O professor consegue acessar o sistema. |
-| Fluxo Básico (Professor acessa o sistema):<br>1. O professor insere suas credenciais (username e senha).<br>2. O sistema verifica as credenciais e autentica o professor.<br>3. O professor entra no Sistema. |
-| Fluxo Alternativo (Professor não consegue acessar o sistema):<br>1. O professor insere suas credenciais (username e senha).<br>2. O sistema não consegue verificar as credenciais informadas (bug ou erro de digitação).<br>3. O Professor deve executar a ação novamente. |
+## Caso de Uso: Efetuar Login
 
-</div>
+**Referência:** US_01
 
-<br>
+**Descrição Geral:** Esse caso de uso se trata do professor efetuar o login no sistema.
 
-<div align="center">
-    
-| Caso de Uso: Alterar Senha           |
-|--------------------------------------|
-| Referência: US_02                    |
-| Descrição Geral: Esse caso de uso se trata do professor alterar sua senha. |
-| Atores: Professor.                   |
-| Pré-condição: O professor está autenticado no sistema. |
-| Pós-condição: A senha do professor é alterada no sistema. |
-| Fluxo Básico (Professor troca de senha):<br>1. O professor acessa a opção de alterar senha no sistema.<br>2. O professor fornece a senha atual e a nova senha.<br>3. O sistema verifica a senha atual, atualiza a senha e confirma a alteração. |
-| Fluxo Alternativo (Professor não consegue trocar de senha):<br>1. O professor insere senha atual incorreta.<br>2. O sistema exibe uma mensagem de erro.<br>3. O Professor deve executar a ação novamente. |
+**Atores:** Professor.
 
-</div>
+**Pré-condição:** Professor deve receber suas credenciais da diretoria da escola.
 
-<br>
+**Pós-condição:** O professor consegue acessar o sistema.
 
-<div align="center">
-    
-| Caso de Uso: Fazer Chamada           |
-|--------------------------------------|
-| Referência: US_03                    |
-| Descrição Geral: Esse caso de uso se trata do professor realizar a chamada em uma turma. |
-| Atores: Professor.                   |
-| Pré-condição: O professor está logado no sistema. |
-| Pós-condição: A chamada da turma é registrada no sistema. |
-| Fluxo Básico (Professor faz a chamada):<br>1. O professor seleciona a turma e a data para a chamada.<br>2. O sistema exibe a lista de alunos da turma.<br>3. O professor marca a presença/ausência de cada aluno.<br>4. O sistema registra as informações de presença/ausência. |
-| Fluxo Alternativo (Aluno teve imprevisto e chegou após a chamada):<br>1. O professor seleciona a turma do aluno e a data.<br>2. O sistema exibe a lista de alunos da turma, já com os dados salvos da chamada.<br>3. O professor marca a presença deste aluno.<br>4. O sistema atualiza as informações de presença/ausência.<br><br>Fluxo Alternativo (Professor marcou algo errado):<br>1. O professor seleciona a turma e a data.<br>2. O sistema exibe a lista de alunos da turma, com a última alteração salva.<br>3. O professor corrige o que precisa.<br>4. O sistema atualiza as informações de presença/ausência.|
+**Fluxo Básico (Professor acessa o sistema):**
+<ol>
+    <li>O professor insere suas credenciais (username e senha);</li>
+    <li>O sistema verifica as credenciais e autentica o professor;</li>
+    <li>O professor entra no Sistema.</li>
+</ol>
 
-</div>
+**Fluxo Alternativo (Professor não consegue acessar o sistema):**
+<ol>
+    <li>O professor insere suas credenciais (username e senha);</li>
+    <li>O sistema não consegue verificar as credenciais informadas (bug ou erro de digitação);</li>
+    <li>O Professor deve executar a ação novamente.</li>  
+</ol>
 
-<br>
+## Caso de Uso: Alterar Senha
 
-<div align="center">
-    
-| Caso de Uso: Gerar Relatórios        |
-|--------------------------------------|
-| Referência: US_04                    |
-| Descrição Geral: Esse caso de uso se trata do professor gerar relatórios de presenças. |
-| Atores: Professor.                   |
-| Pré-condição: O professor está autenticado no sistema e fez a chamada. |
-| Pós-condição: Os relatórios são gerados com as informações. |
-| Fluxo Básico (Professor gera relatórios):<br>1. Para confirmar que a chamada foi feita, professor clica no botão gerar relatório.<br>2. O sistema gera relatórios de faltas agrupados por data, ano do ensino, turma, professor, disciplina ou aluno. |
-| Fluxo Alternativo (Professor não conseguiu gerar relatórios):<br>1. O professor clica no botão gerar relatório.<br>2. O sistema não gera os relatórios por motivos de bug.<br>3. O professor deve executar a ação novamente.|
+**Referência:** US_02
 
-</div>
+**Descrição Geral:** Esse caso de uso se trata do professor alterar sua senha.
 
-<br>
+**Atores:** Professor.
 
-<div align="center">
-    
-| Caso de Uso: Enviar Notificação por E-mail aos Pais/Responsáveis |
-|--------------------------------------|
-| Referência: US_05                    |
-| Descrição Geral: Este caso de uso trata da maneira pela qual a escola irá avisar os pais ou responsáveis caso o comparecimento do aluno às aulas, até o momento, esteja abaixo de 80%. |
-| Atores: Professor, Pais/Responsáveis. |
-| Pré-condição: Foram gerados relatórios de presença do aluno. |
-| Pós-condição: As notificações são enviadas aos pais/responsáveis.|
-| Fluxo Básico (Notificação é enviada):<br>1. O sistema gera um relatório de comparecimento do aluno até o momento.<br>2. O sistema calcula a porcentagem de comparecimento do aluno em relação ao número total de aulas ministradas.<br>3. Envia a notificação se o resultado obtido for menor que 80%, para que os pais/responsáveis tomem as medidas necessárias.<br>4. O sistema registra a data e hora do envio da notificação. |
-| Fluxo Alternativo (Erro no envio da notificação por E-mail):<br>1. Ocorreu um erro durante o envio da notificação por e-mail.<br>2. O sistema registra o erro.<br>3. O sistema tenta reenviar a notificação, até que seja enviado com sucesso.|
+**Pré-condição:** O professor está autenticado no sistema.
 
-</div>
+**Pós-condição:** A senha do professor é alterada no sistema.
+
+**Fluxo Básico (Professor troca de senha):**
+<ol>
+    <li>O professor acessa a opção de alterar senha no sistema;</li>
+    <li>O professor fornece a senha atual e a nova senha;</li>
+    <li>O sistema verifica a senha atual, atualiza a senha e confirma a alteração.</li>
+</ol>
+
+**Fluxo Alternativo (Professor não consegue trocar de senha):**
+<ol>
+    <li>O professor insere senha atual incorreta;</li>
+    <li>O sistema exibe uma mensagem de erro;</li>
+    <li>O Professor deve executar a ação novamente.</li>  
+</ol>
+
+## Caso de Uso: Fazer Chamada
+
+**Referência:** US_03
+
+**Descrição Geral:** Esse caso de uso se trata do professor realizar a chamada em uma turma.
+
+**Atores:** Professor.
+
+**Pré-condição:** O professor está logado no sistema.
+
+**Pós-condição:** A chamada da turma é registrada no sistema.
+
+**Fluxo Básico (Professor faz a chamada):**
+<ol>
+    <li>O professor seleciona a turma e a data para a chamada;</li>
+    <li>O sistema exibe a lista de alunos da turma;</li>
+    <li>O professor marca a presença/ausência de cada aluno;</li>
+    <li>O sistema registra as informações de presença/ausência.</li>
+</ol>
+
+**Fluxo Alternativo (Aluno teve imprevisto e chegou após a chamada):**
+<ol>
+    <li>O professor seleciona a turma do aluno e a data;</li>
+    <li>O sistema exibe a lista de alunos da turma, já com os dados salvos da chamada;</li>
+    <li>O professor marca a presença deste aluno;</li>  
+    <li>O sistema atualiza as informações de presença/ausência.</li>
+</ol>
+
+**Fluxo Alternativo (Professor marcou algo errado):**
+<ol>
+    <li>O professor seleciona a turma e a data;</li>
+    <li>O sistema exibe a lista de alunos da turma, com a última alteração salva;</li>
+    <li>O professor corrige o que precisa;</li>  
+    <li>O sistema atualiza as informações de presença/ausência.</li>
+</ol>
+
+## Caso de Uso: Gerar Relatórios
+
+**Referência:** US_04
+
+**Descrição Geral:** Esse caso de uso se trata do professor gerar relatórios de presenças.
+
+**Atores:** Professor.
+
+**Pré-condição:** O professor está logado no sistema e fez a chamada.
+
+**Pós-condição:** Os relatórios são gerados com as informações.
+
+**Fluxo Básico (Professor gera relatórios):**
+<ol>
+    <li>Para confirmar que a chamada foi feita, professor clica no botão gerar relatório;</li>
+    <li>O sistema gera relatórios de faltas agrupados por data, ano do ensino, turma, professor, disciplina ou aluno.</li>
+</ol>
+
+**Fluxo Alternativo (Professor não conseguiu gerar relatórios):**
+<ol>
+    <li>O professor clica no botão gerar relatório;</li>
+    <li>O sistema não gera os relatórios por motivos de bug;</li>
+    <li>O professor deve executar a ação novamente.</li>  
+</ol>
+
+## Caso de Uso: Enviar Notificação por E-mail aos Pais/Responsáveis
+
+**Referência:** US_05
+
+**Descrição Geral:** Este caso de uso trata da maneira pela qual a escola irá avisar os pais ou responsáveis caso o comparecimento do aluno às aulas, até o momento, esteja abaixo de 80%.
+
+**Atores:** Professor, Pais/Responsáveis.
+
+**Pré-condição:** Foram gerados relatórios de presença do aluno.
+
+**Pós-condição:** As notificações são enviadas aos pais/responsáveis.
+
+**Fluxo Básico (Notificação é enviada):**
+<ol>
+    <li>O sistema gera um relatório de comparecimento do aluno até o momento;</li>
+    <li>O sistema calcula a porcentagem de comparecimento do aluno em relação ao número total de aulas ministradas;</li>
+    <li>Envia a notificação se o resultado obtido for menor que 80%, para que os pais/responsáveis tomem as medidas necessárias.</li>
+    <li>O sistema registra a data e hora do envio da notificação.</li>
+</ol>
+
+**Fluxo Alternativo (Erro no envio da notificação por E-mail):**
+<ol>
+    <li>Ocorreu um erro durante o envio da notificação por e-mail;</li>
+    <li>O sistema registra o erro;</li>
+    <li>O sistema tenta reenviar a notificação, até que seja enviado com sucesso.</li>  
+</ol>
 
 # Diagrama de sequencia
 
