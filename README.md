@@ -23,3 +23,4 @@ Os arquivos da documentação deste projeto estão na pasta [/docs](/docs), e o 
 - Diagrama de Caso de Usos (20/09/23). ✅
 - Atualização do Diagrama de Caso de Usos (24/09/23). ✅
 - Descrição dos Casos de Uso (24/09/23). ✅
+- Diagramas de Sequencias (03/10/23). ✅
