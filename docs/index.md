@@ -205,7 +205,35 @@ A tarefa de computar a presença dos alunos em uma escola ainda é feita totalme
 
 # Diagrama de sequencia
 
-*&lt;Diagrama de ordem e interação dos objetos&gt;*
+## Diagrama Sequencial do Caso de Uso US_01:
+
+<div align="center">
+<img src="https://github.com/profdscrodrigo/UML-Classroom-FCI/assets/117850844/47ea40e6-3d2b-449f-b748-538bae492061" width="700px" />
+</div>
+
+## Diagrama Sequencial do Caso de Uso US_02:
+
+<div align="center">
+<img src="https://github.com/profdscrodrigo/UML-Classroom-FCI/assets/117850844/44d5b746-ebff-4eda-96b1-5fdbba93aed9" width="700px" />
+</div>
+
+## Diagrama Sequencial do Caso de Uso US_03:
+
+<div align="center">
+<img src="https://github.com/profdscrodrigo/UML-Classroom-FCI/assets/117850844/69f4205e-9707-41b5-bda3-8963e64b7de9" width="700px" />
+</div>
+
+## Diagrama Sequencial do Caso de Uso US_04:
+
+<div align="center">
+<img src="https://github.com/profdscrodrigo/UML-Classroom-FCI/assets/117850844/ed528ed6-4bd1-43fc-bf12-90363ba3bb15" width="700px" />
+</div>
+
+## Diagrama Sequencial do Caso de Uso US_05:
+
+<div align="center">
+<img src="https://github.com/profdscrodrigo/UML-Classroom-FCI/assets/117850844/eedb1fa3-6ee9-47af-b509-303395f87ab3" width="700px" />
+</div>
 
 # Diagrama de classes
 
@@ -225,4 +253,6 @@ A tarefa de computar a presença dos alunos em uma escola ainda é feita totalme
 
 # Referências
 
-*&lt;Lista de referências&gt;*
+<ol>
+    <li>Até o momento, só foram utilizados materiais disponibilizados pelo professor no moodle da disciplina.</li>
+</ol>
