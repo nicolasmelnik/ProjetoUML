@@ -237,7 +237,9 @@ A tarefa de computar a presença dos alunos em uma escola ainda é feita totalme
 
 # Diagrama de classes
 
-*&lt;Diagrama de relacionamento entre classes para os seus atributos e operações&gt;*
+<div align="center">
+<img src="https://github.com/profdscrodrigo/UML-Classroom-FCI/assets/117850844/5fc9ebbf-5a95-4dff-95a8-6fdf84bdcb89" width="700px" />
+</div>
 
 # Diagrama de Componentes
 
