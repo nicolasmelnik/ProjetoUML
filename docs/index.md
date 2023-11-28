@@ -291,7 +291,9 @@ Considerações específicas foram feitas para garantir a escalabilidade e desem
 
 # Diagrama de implantação
 
-*&lt;Diagrama para exibir o relacionamento de hardware e software no projeto&gt;*
+<div align="center">
+<img src="https://github.com/profdscrodrigo/UML-Classroom-FCI/assets/117850844/75b0734f-2fe1-4376-b0ec-b72416db2000" width="700px" />
+</div>
 
 # Referências
 
