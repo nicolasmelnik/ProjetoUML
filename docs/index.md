@@ -243,7 +243,9 @@ A tarefa de computar a presença dos alunos em uma escola ainda é feita totalme
 
 # Diagrama de Componentes
 
-*&lt;Diagrama para exibir a relação estrutural dos componentes de um sistema de software
+<div align="center">
+<img src="https://github.com/profdscrodrigo/UML-Classroom-FCI/assets/117850844/cde611fc-f936-4a00-bb4b-bb51517c2a78" width="700px" />
+</div>
 
 # Decisões de arquitetura
 
