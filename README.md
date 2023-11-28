@@ -27,3 +27,4 @@ Os arquivos da documentação deste projeto estão na pasta [/docs](/docs), e o 
 - Diagrama de Classes (22/11/23). ✅
 - Diagrama de Componentes (28/11/23). ✅
 - Decisões de Arquitetura (28/11/23). ✅
+- Diagrama de Implantação (28/11/23). ✅
