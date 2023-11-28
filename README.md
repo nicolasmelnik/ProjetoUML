@@ -25,3 +25,4 @@ Os arquivos da documentação deste projeto estão na pasta [/docs](/docs), e o 
 - Descrição dos Casos de Uso (24/09/23). ✅
 - Diagramas de Sequencias (03/10/23). ✅
 - Diagrama de Classes (22/11/23). ✅
+- Diagrama de Componentes (28/11/23). ✅
