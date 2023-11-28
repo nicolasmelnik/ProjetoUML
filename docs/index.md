@@ -249,7 +249,45 @@ A tarefa de computar a presença dos alunos em uma escola ainda é feita totalme
 
 # Decisões de arquitetura
 
-*&lt;Descrever a infraestrutura escolhida para arquitetura do projeto&gt;*
+## Tecnologias Utilizadas
+
+O sistema de presenças foi desenvolvido utilizando as seguintes tecnologias:
+
+- *Linguagem de Programação:* C# para o lado do servidor (.NET Core)
+- *Banco de Dados:* MySQL para armazenar dados de presenças e usuários
+- *Framework Web:* ASP.NET Core para simplificar o desenvolvimento do servidor web
+
+## Estrutura do Projeto
+
+A estrutura do projeto está organizada da seguinte forma:
+
+- *src:* Contém os arquivos de código-fonte, incluindo modelos, controladores e rotas.
+- *wwwroot:* Armazena os arquivos estáticos, como HTML, CSS e scripts JavaScript do lado do cliente.
+- *config:* Contém configurações do banco de dados, autenticação e outras configurações do sistema.
+
+## Integração de Banco de Dados
+
+A interação com o banco de dados MySQL é feita por meio do Entity Framework Core (EF Core) para garantir a persistência dos dados de presenças, professores e alunos.
+
+## Arquitetura Cliente-Servidor
+
+O sistema segue uma arquitetura cliente-servidor. A comunicação entre o cliente e o servidor é baseada em requisições HTTP utilizando o protocolo RESTful.
+
+## Segurança
+
+Para garantir a segurança da aplicação, implementamos as seguintes medidas:
+
+- *Autenticação e Autorização:* Cada professor tem um username e senha para acessar o sistema. A autenticação é realizada de forma segura.
+- *Proteção contra Ataques:* Implementamos medidas contra ataques comuns, como validação de entrada para prevenir injeção de SQL.
+- *HTTPS:* A aplicação utiliza HTTPS para criptografar a comunicação entre cliente e servidor.
+
+## Escalabilidade e Desempenho
+
+Considerações específicas foram feitas para garantir a escalabilidade e desempenho da aplicação:
+
+- *Acessos Simultâneos:* O sistema foi projetado para suportar acessos simultâneos de vários professores.
+- *Responsividade:* A interface do sistema é responsiva, funcionando de forma eficaz em navegadores web e dispositivos móveis.
+- *Relatórios Semestrais:* Os relatórios de presenças são gerados e enviados aos responsáveis quando comparecimento às aulas, dadas até o momento, estiverem abaixo de 80%.
 
 # Diagrama de implantação
 
